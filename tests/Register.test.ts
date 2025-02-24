@@ -14,7 +14,7 @@ test.describe('User Registration Tests', () => {
         const registerPage = new RegisterPage(page);
         await registerPage.registerUser(registerData.validUser);
         await registerPage.submitRegistration();
-        //await expect(page.locator('text=Your account was created successfully')).toBeVisible();
+        //await expect(page.locator('text=Your account was created    successfully')).toBeVisible();
     });
 
     // test('Registration with missing fields', async ({ page }) => {
