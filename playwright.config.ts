@@ -5,6 +5,7 @@ export default defineConfig({
     workers:1,
     use: {
         browserName: 'chromium', // Change to 'firefox' or 'webkit' if needed
+        baseURL: 'https://parabank.parasoft.com/parabank/register.htm',
         headless: false, // Set to true for headless execution
         screenshot: 'on', // Capture screenshots on failure
         video: 'retain-on-failure', // Capture video on failure

@@ -6,8 +6,8 @@ import { registerData } from '../data/RegisterData';
 const BASE_URL = 'https://parabank.parasoft.com/parabank/register.htm';
 
 test.describe('User Registration Tests', () => {
-    test.beforeEach(async ({ page }) => {
-        await page.goto(BASE_URL);
+    test.beforeEach(async ({ page, baseURL}) => {
+        await page.goto(`${baseURL}`);
     });
 
     test('Successful user registration', async ({ page }) => {
